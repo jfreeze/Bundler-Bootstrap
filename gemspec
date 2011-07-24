@@ -17,8 +17,7 @@ Gem::Specification.new do |s|
   # s.add_development_dependency "another", "= 0.9"
  
   # The list of files to be contained in the gem 
-  s.files         = ['bin/bundle-bootstrap']
-  # `git ls-files`.split("\n")
+  s.files         = `git ls-files`.split("\n")
   # s.executables   = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   # s.extensions    = `git ls-files ext/extconf.rb`.split("\n")
  
