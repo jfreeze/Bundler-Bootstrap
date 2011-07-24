@@ -1,0 +1,18 @@
+= Introduction
+
+bundler-bootstrap is a simple gem that creates a Gemfile and a .bundle/config file since I can never remember what is in these files and hate searching for an old one to copy.
+
+Right now the config file is done according to my likings, which you may like too. Note, this is not customizable yet, but could be.
+
+The gem does not carry the payload for the files, but the file contents are pulled from github. We could easily change this gem to first look in the owners github account for Bundler-Bootstrap-Data, and if it doesn't find anything, to pull from the default location. Patches are welcome.
+
+= Usage
+
+Simply install the gem where it is always accessible. I use rvm and put this gem at the top of an interpreter. It is one of the only gems I have, since the whole point of this to contain gems within a project directory. It puts gems in the highly creative location 'project_gems'.
+
+    gem install bundler-bootstrap
+
+Then to use the gem
+
+    bundler-bootstrap
+
