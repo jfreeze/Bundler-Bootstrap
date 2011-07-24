@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
 
 if (system "which curl")
-  system %{curl -O https://raw.github.com/jfreeze/Bundler-Bootstrap/master/Gemfile}
-  system %{mkdir .bundle; (cd .bundle; curl -O https://raw.github.com/jfreeze/Bundler-Bootstrap/master/.bundle/config)}
+  system %{curl -O https://raw.github.com/jfreeze/Bundler-Bootstrap-Data/master/Gemfile}
+  system %{mkdir .bundle; (cd .bundle; curl -O https://raw.github.com/jfreeze/Bundler-Bootstrap-Data/master/.bundle/config)}
 elsif (system "which wget")
-  system %{wget --no-check-certificate https://raw.github.com/jfreeze/Bundler-Bootstrap/master/Gemfile}
-  system %{mkdir .bundle; (cd .bundle; wget --no-check-certificate https://raw.github.com/jfreeze/Bundler-Bootstrap/master/.bundle/config)}
+  system %{wget --no-check-certificate https://raw.github.com/jfreeze/Bundler-Bootstrap-Data/master/Gemfile}
+  system %{mkdir .bundle; (cd .bundle; wget --no-check-certificate https://raw.github.com/jfreeze/Bundler-Bootstrap-Data/master/.bundle/config)}
 else
   puts "Cannot install bundle bootstrap. Cannot find 'curl' or 'wget'"
 end
+
